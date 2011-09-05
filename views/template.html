@@ -7,9 +7,18 @@
 		{{ if (typeof(header) !== "undefined") { }}{{- header }}{{ } }}
 	</head>
 	<body>
+		
+		<div id="header">
+			<div class="logo">Where is your $ at?</div>
+			<a class="tab">Past</a>
+			<a class="tab">Future</a>
+			<a href="/login" class="option">Login</a>
+			<a href="/signup" class="option">Signup</a>
+		</div>
+
 		<div id="content">
 			{{- body }}
+			<div id="footer">&copy; 2011</div>
 		</div>
-		<div id="footer">&copy; 2011</div>
 	</body>
 </html>

@@ -9,7 +9,145 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 	table { border-collapse: collapse; border-spacing: 0; }
 
-/*************** Standard CSS Overwrites *****************/
-body { background: #1f1f1f; }
-html, input, button, select { font-size: 14px; font-family: 'Segoe UI', Arial, sans; }
+html, input, textarea, button, select { font-size: 14px; font-family: 'Segoe UI', Arial, sans; }
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+	a:hover {
+		color: #333;
+	}
 
+/*************** HTML Layout *******************/
+body {
+	background: #fff;
+}
+#content, #header {
+	width: 980px;
+	margin: 0 auto;
+}
+	#header {
+		padding: 20px;
+	}
+#footer {
+	color: #999;
+	font-size: 0.8em;
+	text-align: center;
+}
+	#header .logo {
+		float: left;
+		font-weight: bold;
+	}
+	#header .tab {
+		margin-left: 20px;
+	}
+	#header .option {
+		margin-right: 20px;
+		float: right;
+	}
+.content {
+	position: relative;
+	height: 600px;
+	overflow: auto;
+}
+	.accounts {
+		position: absolute;
+		width: 200px;
+		height: 600px;
+		background: #fff;
+	}
+		.accounts .add-button {
+			cursor: pointer;
+			background: #D5E7F2;
+			color: #666;
+			margin: 10px 0 0;
+			border-radius: 5px;
+			font-size: 1.2em;
+			text-align: center;
+			font-weight: bold;
+			padding: 5px;
+		}
+			.accounts .add-button:hover {
+				background: #C5FF8E;
+				color: #333;
+			}
+		.accounts .box {
+			position: relative;
+			background: #D5E7F2;
+			color: #333;
+			margin: 10px 0 0;
+			border-radius: 3px;
+			padding: 5px;
+		}
+			.accounts .box .add-account {
+				position: absolute;
+				top: 5px;
+				right: 10px;
+			}
+	.transaction-table {
+		position: absolute;
+		top: 0;
+		left: 200px;
+	}
+		.transaction-table .column-head {
+			position: absolute;
+			font-size: 0;
+			z-index: 2;
+		}
+			.transaction-table .column-head div {
+				display: inline-block;
+				font-size: 12px;
+				padding: 5px;
+				font-weight: bold;
+				color: #333;
+				border-right: none;
+				background: #BDE0DA;
+				text-align: center;
+			}
+		.transaction-table .new-transaction {
+			position: absolute;
+			left: 40px;
+			top: -200px;
+			width: 650px;
+			min-height: 200px;
+			background: #D5E7F2;
+			box-shadow: 1px 1px 5px rgba(0,0,0,0.19);
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			z-index: 1;
+		}
+		.transaction-table .amount {
+			text-align: right;
+			width: 100px;
+		}
+		.transaction-table .account {
+			text-align: center;
+			width: 100px;
+		}
+		.transaction-table .origin {
+			text-align: left;
+			width: 400px;
+		}
+		.transaction-table .date {
+			text-align: center;
+			width: 100px;
+		}
+		.transaction-table .transactions {
+			font-size: 0;
+			height: 570px;
+			width: 765px;
+			padding-top: 24px;
+			white-space: nowrap;
+			overflow: auto;
+		}
+			.transactions .transaction div {
+				display: inline-block;
+				font-size: 12px;
+				padding: 5px;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.transactions .transaction.odd {
+				background: #B9CFFC;
+			}
