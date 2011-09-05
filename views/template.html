@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{ if (typeof(title) !== "undefined") { }}{{= title }}{{ } else { }}BookKeeper Web{{ } }}</title>
+		<link rel="stylesheet" href="/master.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+		{{ if (typeof(header) !== "undefined") { }}{{- header }}{{ } }}
+	</head>
+	<body>
+		<div id="content">
+			{{- body }}
+		</div>
+		<div id="footer">&copy; 2011</div>
+	</body>
+</html>

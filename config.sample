@@ -1,0 +1,9 @@
+// Rename this to config.conf with your settings.
+
+exports.mode = 'LDEV';
+exports.port = 8080;
+
+exports.mongo = {};
+exports.mongo.user = 'yourname';
+exports.mongo.password = '';
+exports.mongo.database = 'mappedin';
