@@ -2,8 +2,8 @@
 
 exports.mode = 'LDEV';
 exports.port = 8080;
+exports.static = './static';
+exports.templates = './views';
+exports.controllers = './controllers';
 
-exports.mongo = {};
-exports.mongo.user = 'yourname';
-exports.mongo.password = '';
-exports.mongo.database = 'mappedin';
+exports.mongodb = 'dbname';
