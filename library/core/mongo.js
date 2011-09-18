@@ -21,6 +21,6 @@ if (testControllerPattern.test(module.parent.id)) {
 exports.db = function (collection) {
 	return db(config.mongodb + '.' + collection);
 }
-exports.gen_id = function (hash) {
+exports.oid = function (hash) {
 	return new oid(hash);
 }

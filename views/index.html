@@ -1,243 +1,97 @@
 {{ title = 'BookKeeper Web - Your little finance tracker.' }}
 {{ header = partial('indexHeader.html') }}
 
-<div class="content">
+<div id="new-transaction-modal" class="modal">
+	Account
+	balkbalbal
+</div>
+
+<div id="app">
 	
-	<div class="accounts">
-		<div class="add-button">
-			New Transaction
+	<div class="boxes">
+		<div class="accounts box">
+			<a class="all-accounts">All Accounts</a>
+			<a class="account">Chequing</a>
+			<a class="account">Savings</a>
+			<a class="add-account">+ add</a>
 		</div>
-		<div class="past box">
-			<div class="account-header">
-				<div class="title">Account</div>
-				<a class="add-account">+</a>
-			</div>
-			<div class="account">
-				<div class="account-name">Chequing</div>
-				<div class="account-amount">$100</div>
-			</div>
+		<div class="futures box">
+			<a class="all-futures">Future Planning</a>
+			<a class="future">Bills and Rent</a>
+			<a class="future">Trip to Spain</a>
+			<a class="add-future">+ add</a>
 		</div>
-		<div class="future box">
-			<div class="account-header">
-				<div class="title">Future</div>
+	</div>
+	
+	<div class="aggregate">
+		not dark
+		<div class="dark">
+			<div class="net-income fact">
+				<div class="label">Net Income</div>
+				<div class="amount red">($1304.20)</div>
 			</div>
-			<div class="account">
-				<div class="account-name">Chequing</div>
-				<div class="account-amount">$100</div>
+			<div class="fact">
+				<div class="label">Income</div>
+				<div class="amount">$0.00</div>
+			</div>
+			<div class="fact">
+				<div class="label">Expenses</div>
+				<div class="amount">$1304.20</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="transaction-table">
-		<div class="column-head">
-			<div class="amount">Amount</div>
-			<div class="date">Date</div>
-			<div class="origin">Origin</div>
-			<div class="account">Account</div>
-		</div>
-
-		<div class="new-transaction">
-			Hello, this is a new transaction window!
-			<form class="new-transaction-form">
-				<label>
-					<span class="text">Amount</span>
-					<input type="text" class="amount-input" />
-				</label>
-			</form>
-		</div>
-		
-		<div class="transactions">
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
+	<div class="grey">
+		<div id="page">
+			<div class="heading">
+				<span class="title">Checkings</span>
 			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
-			</div>
-			<div class="transaction">
-				<div class="amount">$100</div>
-				<div class="date">Aug 16, 2011</div>
-				<div class="origin">For no reason at all</div>
-				<div class="account">Savings</div>
+			<div class="transaction-table">
+				<div class="column-head">
+					<div class="action"></div>
+					<div class="amount">Amount</div>
+					<div class="origin">Origin</div>
+					<div class="date">Date</div>
+					<div class="account">Account</div>
+				</div>
+				<div class="transactions">
+					{{ for (var i = 0; i < 100; i++) { }}
+					<div class="transaction {{ if (i%2 == 0) { }}odd{{ } }}">
+						<div class="action"></div>
+						<div class="amount">${{= Math.floor(Math.random()*100) }}</div>
+						<div class="origin">For no reason at all</div>
+						<div class="date">3 days ago</div>
+						<div class="account">Savings</div>
+					</div>
+					{{ } }}
+				</div>
 			</div>
 		</div>
 	</div>
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
 <script>
 $(function () {
 	
-	$(".add-button").click(function () {
-		$(".new-transaction").animate({ top: 24 }, 200);
+	$(".new-transaction").click(function () {
+		$( "#new-transaction-modal" ).dialog({
+			width: 600,
+			height: 400,
+			draggable: false,
+			resizable: false,
+			closeText: 'hide',
+			position: ['center', 100],
+			modal: true
+		});
+		$(".ui-dialog-titlebar").hide();
+		$(".ui-widget-overlay").click(function(){
+		    $(".ui-dialog-titlebar-close").trigger('click');
+		});
 	});
+	//$(".new-transaction").trigger("click");
 
 });
 </script>

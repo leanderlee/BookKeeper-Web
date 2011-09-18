@@ -1,5 +1,6 @@
 //  Leander Lee
 
+require.paths.unshift('./library');
 require.paths.unshift('./library/core');
 
 require('connect-redis');

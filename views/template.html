@@ -3,20 +3,11 @@
 	<head>
 		<title>{{ if (typeof(title) !== "undefined") { }}{{= title }}{{ } else { }}BookKeeper Web{{ } }}</title>
 		<link rel="stylesheet" href="/master.css" type="text/css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-		{{ if (typeof(header) !== "undefined") { }}{{- header }}{{ } }}
+		<link rel="stylesheet" href="/jqueryui.css" type="text/css" />
 	</head>
 	<body>
-		
-		<div id="header">
-			<div class="logo">Where is your $ at?</div>
-			<a class="tab">Past</a>
-			<a class="tab">Future</a>
-			<a href="/login" class="option">Login</a>
-			<a href="/signup" class="option">Signup</a>
-		</div>
-
 		<div id="content">
+			<div id="header">{{ if (typeof(header) !== "undefined") { }}{{- header }}{{ } }}</div>
 			{{- body }}
 			<div id="footer">&copy; 2011</div>
 		</div>
